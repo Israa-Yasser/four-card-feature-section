@@ -1,157 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: rgba(235, 240, 245, 0.699);
-    box-sizing: border-box;
+  background-color: rgba(235, 240, 245, 0.699);
+}
+
+.parent {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-block: 3rem;
+}
+
+.details {
+  margin-bottom: 3rem;
+}
+
+.title,
+.artificial,
+.points {
+  text-align: center;
 }
 
 .reliable {
-    text-align: center;
-    font-size: 23px;
-    margin-top: 40px;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 0.5rem;
 }
 
-h2 {
-    text-align: center;
-}
-
-.artificial {
-    text-align: center;
-
-}
-
-.points {
-    text-align: center;
+.title {
+  margin-bottom: 0.5rem;
 }
 
 .content {
-    display: flex;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
 
+.supervisor,
+.team,
+.karma,
+.calculator {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1.5rem;
 }
 
 .supervisor {
-    width: 300px;
-    height: 250px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 150px;
-    background-color: white;
-}
-
-.aqu {
-    width: 100%;
-    height: 8px;
-    background-color: aqua;
-    border-radius: 10px;
-}
-
-.supervisor h3 {
-    margin-left: 20px;
-    margin-top: 40px;
-}
-
-.supervisor p {
-    margin-left: 20px;
-}
-
-.supervisor img {
-    margin-left: 200px;
-    margin-top: 20px;
-}
-
-.teamBuilder {
-    width: 300px;
-    height: 600px;
-    margin-left: 70px;
+  border-top: 10px solid aqua;
 }
 
 .team {
-    width: 300px;
-    height: 250px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.crimso {
-    width: 100%;
-    height: 8px;
-    background-color: crimson;
-    border-radius: 10px;
-}
-
-.team h3 {
-    margin-left: 20px;
-    margin-top: 40px;
-}
-
-.team p {
-    margin-left: 20px;
-}
-
-.team img {
-    margin-left: 200px;
-    margin-top: 20px;
+  border-top: 10px solid crimson;
 }
 
 .karma {
-    width: 300px;
-    height: 250px;
-    border: 1px solid white;
-    margin-top: 50px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.orang {
-    width: 100%;
-    height: 8px;
-    background-color: orange;
-    border-radius: 10px;
-}
-
-.karma h3 {
-    margin-left: 20px;
-    margin-top: 40px;
-}
-
-.karma p {
-    margin-left: 20px;
-}
-
-
-.karma img {
-    margin-left: 200px;
-    margin-top: 20px;
+  border-top: 10px solid orange;
 }
 
 .calculator {
-    width: 300px;
-    height: 250px;
-    border: 1px solid white;
-    margin-top: 150px;
-    margin-left: 80px;
-    border-radius: 10px;
-    background-color: white;
+  border-top: 10px solid rgba(0, 0, 255, 0.651);
 }
 
-.rgb {
-    width: 100%;
-    height: 8px;
-    background-color: rgba(0, 0, 255, 0.651);
-    border-radius: 10px;
+.teamBuilder {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
+.supervisor h3,
+.team h3,
+.karma h3,
 .calculator h3 {
-    margin-left: 20px;
-    margin-top: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
+.supervisor p,
+.team p,
+.karma p,
 .calculator p {
-    margin-left: 20px;
+  margin-bottom: 3rem;
 }
 
-.calculator img {
-    margin-left: 200px;
-    margin-top: 20px;
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
 }
